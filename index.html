@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Pladsylvanian Confederation, or simply Pladsylvania, is the sole country in the fifth realm.">
+    <title>Pladsylvanian Confederation</title>
+     <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Pladsylvanian Confederation</h1>
+        <hr>
+        <blockquote>
+            <p>Pladsylvania shall be made up of constituent territories, each of which shall have their own respective rulers.</p>
+            <cite>- Section 4.1 of the <a href="https://docs.google.com/document/d/1vemqPbPCcf93TPnZ3rFnK5d3O5DSdaLQpZO-v78qqus/edit?usp=sharing">3rd Constitution of Pladsylvania</a></cite>
+        </blockquote>
+        <br>
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: center; background-color: var(--yellow-1); color: var(--dark-background); font-weight: bold; font-size: var(--h2-size); padding: var(--spacing-sm);">
+                    Pladsylvanian Confederation
+                </td>
+            </tr>
+            <tr class="divider">
+                <td colspan="2">
+                    <div class="table-images">
+                        <figure>
+                            <img src="Pladsylvania_Flag.png" alt="Flag of Pladsylvania">
+                            <figcaption>Flag</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Coat_of_Arms.png" alt="Coat of Arms of Pladsylvania">
+                            <figcaption>Coat of Arms</figcaption>
+                        </figure>
+                    </div>
+                </td>
+            </tr>
+            <tr class="divider">
+                <td colspan="2" style="text-align: center;">
+                    <span class="table-label">Motto:</span> "Prosperity to Pladsylvania!"
+                </td>
+            </tr>
+            <tr class="divider">
+                <td colspan="2" style="text-align: center;">
+                    <span class="table-label">Anthem:</span>
+                    <span class="tooltip-hover">
+                    Prosperous Ode
+                    <span class="tooltip-popup">
+                        <a href="https://www.youtube.com/watch?v=Rc3zK8areRo" target="_blank">Die Gedanken Sind Frei (Instrumental)</a>
+                    </span>
+                    </span>
+                    <br>
+                    <audio controls>
+                        <source src="Prosperous_Ode.mp3" type="audio/mpeg">
+                        <span>Your browser does not support audio.</span>
+                    </audio>
+                </td>
+            </tr>
+            <tr class="divider">
+                <td colspan="2">
+                    <div id="map-display">
+                        <figure id="map-kaiser">
+                            <img src="Kaiser_Projection.png" alt="Kaiser Projection map of Pladsylvania">
+                            <figcaption>Kaiser Projection</figcaption>
+                        </figure>
+                        <figure id="map-leoquinn" class="map-hidden">
+                            <img src="Leo-Quinn_Projection.png" alt="Leo-Quinn Projection map of Pladsylvania">
+                            <figcaption>Leo-Quinn Projection</figcaption>
+                        </figure>
+                    </div>
+                    <div style="text-align: center; margin-top: var(--spacing-xs);">
+                        <label style="margin-right: var(--spacing-md);">
+                            <input type="radio" name="map-select" value="kaiser" checked> Show Kaiser Projection
+                        </label>
+                        <br>
+                        <label style="margin-right: var(--spacing-md);">
+                            <input type="radio" name="map-select" value="leoquinn"> Show Leo-Quinn Projection
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="map-select" value="both"> Show Both
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr class="divider">
+                <th>Capital</th>
+                <td>
+                    Kaiserbuhel, Imperial Abbey of Mittelwald
+                    <p><img src="Lodestone_Compass.gif" width="24" alt="" class="inline"> X:300 Z:350</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Largest settlement</th>
+                <td>
+                    Dunotahl, Burgraviate of Krauhalt
+                    <p><img src="Lodestone_Compass.gif" width="24" alt="" class="inline"> X:0 Z:-700</p>
+                </td>
+            </tr>
+            <tr class="divider">
+                <th>Official Language</th>
+                <td><span class="tooltip" data-tip="English">Vollandan</span>
+                <br>
+                (<i>de facto,</i> formerly <i>de jure</i>)
+                </td>
+            </tr>
+            <tr class="divider">
+                <th>Religion</th>
+                <td>Allevaricism</td>
+            </tr>
+            <tr class="divider">
+                <th>Demonym</th>
+                <td>Pladsylvanian</td>
+            </tr>
+            <tr class="divider">
+                <th>Government</th>
+                <td>Federal dietary semi-constitutional monarchy</td>
+            </tr>
+            <tr>
+                <td style="text-align:right; color: var(--yellow-1);">Emperor<br>Regent<br>Viceregent</td>
+                <td>Jon of Pladsylvania<br>Aran of Krauhalt<br>Stephanie of Bluetchen</td>
+            </tr>
+            <tr class="divider">
+                <th>Legislature
+                </th>
+                <td>Imperial Diet</td>
+            </tr>
+            <tr>
+                <td style="text-align:right; color: var(--yellow-1);">Electors (7)</td>
+                <td>Jack of Unterarmut (Speaker of the Diet)
+                    <br>Stephanie of Bluetchen (Clerk of the Diet)
+                    <br>Aran of Krauhalt
+                    <br>Caelan of Nebligen
+                    <br>Thomas of Malrost
+                    <br>Lotus of Gattinborn
+                    <br>Asif of Novigast
+            </tr>
+            <tr class="divider">
+                <th>Confederated</th>
+                <td><span class="tooltip-hover">1050<span class="tooltip-popup">Nov. 30, 2023</span></span> AVL</td>
+            </tr>
+<tr class="divider">
+    <td colspan="2">
+        <div class="preceded-by">
+            <p class="table-label">Preceded by</p>
+            <ul>
+                <li>
+                    <img src="Tae_Torka_Flag.png" alt="Tae Torka flag" class="inline">
+                    <span>Tae Torkan People's Republic</span>
+                </li>
+                <li>
+                    <img src="Vollanda_Flag.png" alt="Vollanda flag" class="inline">
+                    <span>Vollandan Empire</span>
+                </li>
+                <li>
+                    <img src="Valahasia_Flag.png" alt="Valahasia flag" class="inline">
+                    <span>Kingdom of Valahasia</span>
+                </li>
+            </ul>
+        </div>
+    </td>
+</tr>
+        </table>
+        <p>
+            The Pladsylvanian Confederation, or simply Pladsylvania, is the sole country in the fifth realm. Its <em>de facto</em> mainland stretches around three kilometers north to south and two kilometers east to west, both roughly centered on 0, 0.
+        </p>
+        <p>
+            The Confederation itself was established alongside the settling of the fifth realm, following the evacuation of the Tae Torkan People's Republic due to the Chickenheimer Disaster. Unlike its predecessor, Pladsylvania has been a fully independent state from its inception, rather than originating as a subordinate, autonomous polity. Despite that, it maintains considerable continuity with the defunct Tae Torkan People's Republic, having the same ruler installed and little change affected on its economic structure.
+        </p>
+
+<div id="toc-clip">
+        <div id="toc">
+    <div id="toc-panel">
+  <p class="toc-title">&#5010;&#9776; Contents</p>
+  <ol>
+    <li><a href="#etymology">Etymology</a></li>
+    <li><a href="#history">History</a>
+      <ol>
+        <li><a href="#post-confederation">Post-Confederation</a>
+          <ol>
+            <li><a href="#draconian_war">Draconian War</a></li>
+          </ol>
+        </li>
+        <li><a href="#northern_malaise">Northern Malaise</a>
+          <ol>
+            <li><a href="#war_of_blossoms">War of Blossoms</a></li>
+          </ol>
+        </li>
+        <li><a href="#antevicarian_period">Antevicarian Period</a></li>
+        <li><a href="#reign_of_two_pontiffs">Reign of Two Pontiffs</a></li>
+        <li><a href="#first_great_abeyance">First Great Abeyance</a></li>
+        <li><a href="#the_prospering">The Prospering</a>
+          <ol>
+            <li><a href="#squire_rebellion">Squire Rebellion</a></li>
+          </ol>
+        </li>
+        <li><a href="#banquet_era">Banquet Era</a>
+          <ol>
+            <li><a href="#silent_war">Silent War</a></li>
+          </ol>
+        </li>
+        <li><a href="#secular_recession">Secular Recession</a></li>
+        <li><a href="#second_great_abeyance">Second Great Abeyance</a></li>
+        <li><a href="#orchidean_renaissance">Orchidean Renaissance</a>
+          <ol>
+            <li><a href="#convoy_crisis">Convoy Crisis</a></li>
+          </ol>
+        </li>
+        <li><a href="#east_by_west_marches">East by West Marches</a></li>
+        <li><a href="#the_antipathy">The Antipathy (Ongoing)</a></li>
+      </ol>
+    </li>
+    <li><a href="#politics">Politics</a>
+      <ol>
+        <li><a href="#imperial_diet">Imperial Diet</a></li>
+        <li><a href="#curia_regis">Curia Regis</a></li>
+        <li><a href="#regency_council">Regency Council</a></li>
+        <li><a href="#suffragists_bloc">Suffragist's Bloc</a></li>
+        <li><a href="#sirb">Squire Intake & Relations Board</a></li>
+      </ol>
+    </li>
+  </ol>
+  </div>
+  <button id="toc-toggle">❯</button>
+</div>
+</div>
+
+<div id="toc-mobile">
+    <p class="toc-title">&#9776; Contents</p>
+    <ol>
+        <li><a href="#etymology">Etymology</a></li>
+        <li><a href="#history">History</a>
+            <ol>
+                <li><a href="#post-confederation">Post-Confederation</a>
+                    <ol>
+                        <li><a href="#draconian_war">Draconian War</a></li>
+                    </ol>
+                </li>
+                <li><a href="#northern_malaise">Northern Malaise</a>
+                    <ol>
+                        <li><a href="#war_of_blossoms">War of Blossoms</a></li>
+                    </ol>
+                </li>
+                <li><a href="#antevicarian_period">Antevicarian Period</a></li>
+                <li><a href="#reign_of_two_pontiffs">Reign of Two Pontiffs</a></li>
+                <li><a href="#first_great_abeyance">First Great Abeyance</a></li>
+                <li><a href="#the_prospering">The Prospering</a>
+                    <ol>
+                        <li><a href="#squire_rebellion">Squire Rebellion</a></li>
+                    </ol>
+                </li>
+                <li><a href="#banquet_era">Banquet Era</a>
+                    <ol>
+                        <li><a href="#silent_war">Silent War</a></li>
+                    </ol>
+                </li>
+                <li><a href="#secular_recession">Secular Recession</a></li>
+                <li><a href="#second_great_abeyance">Second Great Abeyance</a></li>
+                <li><a href="#orchidean_renaissance">Orchidean Renaissance</a>
+                    <ol>
+                        <li><a href="#convoy_crisis">Convoy Crisis</a></li>
+                    </ol>
+                </li>
+                <li><a href="#east_by_west_marches">East by West Marches</a></li>
+                <li><a href="#the_antipathy">The Antipathy (Ongoing)</a></li>
+            </ol>
+        </li>
+        <li><a href="#politics">Politics</a>
+            <ol>
+                <li><a href="#imperial_diet">Imperial Diet</a></li>
+                <li><a href="#curia_regis">Curia Regis</a></li>
+                <li><a href="#regency_council">Regency Council</a></li>
+                <li><a href="#suffragists_bloc">Suffragist's Bloc</a></li>
+                <li><a href="#sirb">Squire Intake & Relations Board</a></li>
+            </ol>
+        </li>
+    </ol>
+</div>
+
+        <h2 id="etymology">Etymology</h2>
+        <hr>
+        <p>
+            The name <em>Pladsylvania</em> derives from <em>Plad-</em>; a contraction of the word 'Paladin', and <em>-sylvania</em>; meaning 'forested land'. Collectively, the name was chosen to mean <em>Paladins' Forested Land</em> or <em>Wooded Land of the Paladins.</em>
+        </p>
+        <h2 id="history">History</h2>
+        <hr>
+        <h3 id="post-confederation">Post-Confederation | <span class="tooltip-hover">1050<span class="tooltip-popup">Nov. 30, 2023</span></span> - <span class="tooltip-hover">1253<span class="tooltip-popup">Jun. 20, 2024</span></span> AVL</h3>
+        <p>
+            Pladsylvania was confederated concurrently with the settling of the Fifth Realm itself. Both were done in direct response to the Chickenheimer Disaster which laid waste to the Tae Torkan People's Republic. Jack, grand orchestrator of the galline catastrophe, though escaping the now-irradiated TTPR and arriving in the Fifth Realm along with the other survivors, found himself in an awkward position politically. Despite being exiled and subject to potential arrest or execution by imperial authorities, he was somehow able to secure and hold a seat on the nascent Imperial Diet. Resultantly, he would be forced to fulfill his electoral duties, not least of which included his unsuccessful attempt to have himself pardoned, in absentia. This state of affairs remained until Jack and the Emperor struck a deal, wherein the former received a full pardon. This deal also involved Jack's appointment as chair of the ultimately short-lived Imperial Committee for the Development, Repair & Inspection of the Netherworks (ICDRIN). 
+        </p>
+        <figure>
+            <img src="Post-Confederation.png" alt="Early Kaiserbuhel">
+            <figcaption>Kaiserbuhel, <span class="tooltip-hover">1053<span class="tooltip-popup">Dec. 3, 2023</span></span> AVL, mere days after confederation.</figcaption>
+        </figure>
+        <p>
+            Kaiserbuhel, the oldest settlement on the realm, was predictably founded at the very start of this period, later joined by the second-oldest settlement in Mittelwald; Ausbernhof. Most of the other founding territories' capital settlements, such as Dunotahl, Atemkirsche, Mannstadt, and Waechterhagen were also founded during this time.
+        </p>
+        <h4 id="draconian_war">Draconian War | <span class="tooltip-hover">1061<span class="tooltip-popup">Dec. 11, 2023</span></span> AVL - Present</h4>
+        <p>
+            Shortly after the confederation of Pladsylvania, the Imperial Diet voted to commence war on the Ender Dragon, with the express aim of securing the resources of the end dimension. The resulting army was composed of troops from Mittelwald, Nebligen, Krauhalt and Transfluss. Launching a coordinated attack, they managed to kill the Ender Dragon while sustaining minimal casualties, opening up the outer end islands for plunder and exploration.
+        </p>
+        <h3 id="northern_malaise">Northern Malaise | <span class="tooltip-hover">1254<span class="tooltip-popup">Jun. 21, 2024</span></span> - <span class="tooltip-hover">1302<span class="tooltip-popup">Aug. 8, 2024</span></span> AVL</h3>
+        <p>
+            The Northern Malaise was a period of heightened tension in the north of Pladsylvania, centered around the County of Malrost. It began in 1254 AVL with the Mannstadt Mining Disaster, in which a wither breached containment under the Malrostan capital. An emergency crisis response force consisting of troops from Mittelwald and Transfluss eventually arrived on the scene. Though the Transflussan contingent suffered heavy casualties, they were ultimately able to down the wither. Malrost's perceived recklessness in the incident, mainly regarding Thomas' failure to communicate his intentions to summon a wither under the settlement, was the source of much controversy. Being antagonized to much of Pladsylvania in the event's aftermath, the territory lost even the ardent support from the Emperor it had previously enjoyed.
+        </p>
+        <figure>
+            <img src="Northern_Malaise.png" alt="Large Underground Tunnel">
+            <figcaption>A portion of the tunnel remains under Mannstadt, aftermath of the Mining Disaster.</figcaption>
+        </figure>
+        <p>
+            Seeking to capitalize on this opportunity, Nebligen filed a suit in the now-defunct Civil Chamber of Justice against Thomas, alleging theft of cherry trees from their land. Narrowly losing the suit in a coin flip after previous efforts by the presiding judge to break the stalemate failed, Caelan of Nebligen resolved to settle the dispute via military means.
+        </p>
+        <h4 id="war_of_blossoms">War of Blossoms | <span class="tooltip-hover">1260<span class="tooltip-popup">Jun. 27, 2024</span></span> - <span class="tooltip-hover">1302<span class="tooltip-popup">Aug. 8, 2024</span></span> AVL</h4>
+        <p>
+            Despite being anticipated by belligerents and bystanders alike to be a major showdown, in reality the War of Blossoms saw no real combat for its entire duration. The previously established Malrostan-Nebligenner Rivalry was shown to be largely bluff and bluster, and eventually at the Emperor's behest both parties agreed to a mutual truce, with neither claiming victory.
+        </p>
+        <figure>
+            <img src="War_of_Blossoms.png" alt="Cherry Biome, With Pink Petals Removed and Cherry Trees Replaced With Oak">
+            <figcaption>Court photograph taken of a covered-up cherry biome, which was a key part in the escalation to war.</figcaption>
+        </figure>
+        <h3 id="antevicarian_period">Antevicarian Period | <span class="tooltip-hover">1303<span class="tooltip-popup">Aug. 9, 2024</span></span> - <span class="tooltip-hover">1326<span class="tooltip-popup">Sep. 1, 2024</span></span> AVL</h3>
+        <p>
+            Only one day after the formal end to the War of Blossoms, Allevaricism was announced as the planned state religion of Pladsylvania. This was followed shortly thereafter by the Emperor announcing that an election would be held to decide the first Vicar General; the co-ruler of the newly instituted church.
+        </p>
+        <figure>
+            <img src="Antevicarian_Period.png" alt="Thomas' Face Photoshopped Onto A Tractor's Front Window">
+            <figcaption>Image used in Thomas' campaign video during the run-up to the election.</figcaption>
+        </figure>
+        <p>
+            Throughout most of the campaign, Caelan and Aran seemed to be the two front-runners, with Thomas, Jack and Lachlan also running. Caelan was one of the later candidates to enter the race, and adopted much of the platforms of their opponents. This approach emphasized building a broad support base and remaining relatively moderate, so as to not alienate any particular group. By contrast, Aran championed the idea of a strong, stalwart and independent Vicar General who would act as a check on the Emperor's power. Caelan would ultimately win the election, though Aran received only the third-most votes, falling behind Thomas.
+        </p>
+        <h3 id="reign_of_two_pontiffs">Reign of Two Pontiffs | <span class="tooltip-hover">1327<span class="tooltip-popup">Sep. 2, 2024</span></span> - <span class="tooltip-hover">1428<span class="tooltip-popup">Dec. 12, 2024</span></span> AVL</h3>
+        <p>
+            Caelan and Aran, the first two Vicar Generals in Pladsylvanian history, together oversaw a period of considerable socioeconomic change. The second ship commissioned into the Pladsylvanian navy, the Herald of the Seas, was finally built during the first half of Caelan's term, having been designed before even the founding of the Confederation itself. Also during Caelan's first term were the foundings of Herbsthalden, Eichenbrueck, and Pellendam in the Imperial Abbey of Mittelwald. The very beginning of Aran's term saw the construction of the Paterdom monastery, though his time in office was effectively cut short by the onset of the First Great Abeyance.
+        </p>
+        <figure>
+            <img src="Reign_of_Two_Pontiffs.png" alt="Age of Sail Sloop of War, Viewed Through A Spyglass">
+            <figcaption>The <i>Herald of the Seas</i> photographed right after its completion.</figcaption>
+        </figure>
+        <h3 id="first_great_abeyance">First Great Abeyance | <span class="tooltip-hover">1429<span class="tooltip-popup">Dec. 13, 2024</span></span> - <span class="tooltip-hover">1528<span class="tooltip-popup">Mar. 22, 2025</span></span> AVL</h3>
+        <p>
+            Towards the tail end of Aran's first term as Vicar General, Pladsylvania fell into a general decline, as architectural and economic progress ground to a halt in a cyclical downturn. This began a prolonged period of complete stagnation, even longer than the ones faced by the Vollandan Empire and Tae Torkan People's Republic. 
+        </p>
+        <h3 id="the_prospering">The Prospering | <span class="tooltip-hover">1529<span class="tooltip-popup">Mar. 23, 2025</span></span> - <span class="tooltip-hover">1584<span class="tooltip-popup">May. 17, 2025</span></span> AVL</h3>
+        <p>
+            This extended period of stagnancy was ended by the resumption of quarrying under Kaiserbuhel, carried out by the Emperor, which itself kickstarted renewed building and economic development across much of the rest of the realm. This period saw the founding of the territory of Gattinborn, as well as significant terraforming efforts in Pilzingen in preparation for the 1545 Pilzingen Camping Trip. Significant renovations to the Kaiserbuhel courtyard, particularly the addition of the Tree of Helping Spirits, also occured during this time. One of the last significant events during this time was the finishing of the Kaiserbuhel quarry, with slime finally being laid down across its floor on 1582 AVL.
+        </p>
+        <figure>
+            <img src="The_Prospering.png" alt="Aran and Lotus standing in a cart, being pulled by Jack">
+            <figcaption>Jack, Lotus and Aran during the <span class="tooltip-hover">1545<span class="tooltip-popup">Apr. 8, 2025</span></span> Pilzingen Camping Trip.</figcaption>
+        </figure>
+        <h4 id="squire_rebellion">Squire Rebellion | <span class="tooltip-hover">1538<span class="tooltip-popup">Apr. 1, 2025</span></span> - <span class="tooltip-hover">1592<span class="tooltip-popup">May. 25, 2025</span></span> AVL</h4>
+        <p>
+            With the Prospering came new squires immigrating into Pladsvylania en masse, and tensions soon broke out between many of these squires and the Emperor. Protests against ROSA and undiplomatic remarks made against constituent territories of the Confederation were a particular sore point. By 1565 AVL, the Emperor's plans to eliminate all current squires became clear, a goal that was finally achieved on 1592 AVL. 
+        </p>
+        <h3 id="banquet_era">Banquet Era | <span class="tooltip-hover">1585<span class="tooltip-popup">May. 18, 2025</span></span> - <span class="tooltip-hover">1615<span class="tooltip-popup">Jun. 17, 2025</span></span> AVL</h3>
+        <p>
+            Riding on the coattails of the recent building boom and general economic prosperity, the Emperor planned a banquet of all Electors in the Imperial Diet, during which significant new legislative goals were outlined and agreed to. Arguably the most influential of the resulting motions was the declaration of war against the Wardens of the Deep, with the express war aim of securing the Silence Armour Trim.
+        </p>
+        <figure>
+            <img src="Banquet_Era.png" alt="4 People in different variations Aran's skin">
+            <figcaption>Attendees of the <span class="tooltip-hover">1603<span class="tooltip-popup">Jun. 5, 2025</span></span> State Banquet costuming Aran of Krauhalt due to his unexpected absence.</figcaption>
+        </figure>
+        <h4 id="silent_war">Silent War | <span class="tooltip-hover">1605<span class="tooltip-popup">Jun. 7, 2025</span></span> - <span class="tooltip-hover">1615<span class="tooltip-popup">Jun. 17, 2025</span></span> AVL</h4>
+        <p>
+            The Silent War, as it came to be known, was one of the shortest in recorded and especially recent history. The forces of the Pladsylvanian Confederation spent most of the war preparing for what they expected to be a protracted and costly series of offensives. The first of these planned offensives would be the Western Offensive, a campaign against the nearest cluster of untouched ancient cities. However, the offensive would be cut short at the Action of Aran's Serendipity, the first and only action of the war, when Pladsylvania secured an unexpectedly swift victory.
+        </p>
+        <figure>
+            <img src="Silent_War.png" alt="Aran holding Silence Armour Trim above an ancient city">
+            <figcaption>The eponymous Burgrave of Krauhalt, photographed immediately after the Action of Aran's Serendipity.</figcaption>
+        </figure>
+        <h3 id="secular_recession">Secular Recession | <span class="tooltip-hover">1616<span class="tooltip-popup">Jun. 18, 2025</span></span> - <span class="tooltip-hover">1788<span class="tooltip-popup">Dec. 7, 2025</span></span> AVL</h3>
+        <p>
+            Even after their decisive success in the Silent War, the Pladsylvanian economy spooled down gradually following the end of the conflict. Before long, only excavation and construction projects in and around Paterdom saw any continued progress. 
+        </p>
+        <figure>
+            <img src="Secular_Recession.png" alt="West Paterdom, prominently featuring a large custom birch tree">
+            <figcaption>Most of the western portion of Paterdom, including its signature birch tree, came about during the Secular Recession.</figcaption>
+        </figure>
+        <h3 id="second_great_abeyance">Second Great Abeyance | <span class="tooltip-hover">1789<span class="tooltip-popup">Dec. 8, 2025</span></span> - <span class="tooltip-hover">1841<span class="tooltip-popup">Jan. 29, 2026</span></span> AVL</h3>
+        <p>
+            Eventually, even the efforts by Paterdom waned, in a period known as the Second Great Abeyance, receiving its name due to being characterized with the same national lethargy as its predecessor.
+        </p>
+        <h3 id="orchidean_renaissance">Orchidean Renaissance | <span class="tooltip-hover">1842<span class="tooltip-popup">Jan. 30, 2026</span></span> - <span class="tooltip-hover">1874<span class="tooltip-popup">Mar. 3, 2026</span></span> AVL</h3>
+        <p>
+            The Second Great Abeyance was finally ended by construction efforts in the Barony of Bluetchen, which triggered a knock on economic resurgence in Mittelwald, Krauhalt and Gattinborn. All four of these territories would play a role in the Convoy Crisis, the consistent headline story throughout this period. Other significant events included the Desprucing of Mittelwald, and the construction of SKHT Aperture Broadcasting tower over Bad Kardlinhaus.
+        </p>
+        <figure>
+            <img src="Orchidean_Renaissance.png" alt="A at the end of a light pink hallway">
+            <figcaption><i>Pattern of an Orchid</i>, a piano constructed in Kaiserbuhel during the Orchidean Renaissance.</figcaption>
+        </figure>
+        <h4 id="convoy_crisis">Convoy Crisis | <span class="tooltip-hover">1848<span class="tooltip-popup">Feb. 5, 2026</span></span> - <span class="tooltip-hover">1868<span class="tooltip-popup">Feb. 25, 2026</span></span> AVL</h4>
+        <p>
+            A refugee crisis set in motion by prospecting efforts south of Dunotahl, and the devastation of a local village. The two survivors, later named Bentley the Big and Elizabeth the Towering, were airlifted first to Waechterhagen and later to the new settlement of Luftoog. From there, given adequate berths and foodstuffs, the population exploded and convoys of refugees were sent to Gattinborn. The crisis was eventually ended by the signing of the Treaty of Sicherhaven, named after the new settlement in Gattinborn purpose-built to house the refugees.
+        </p>
+        <figure>
+            <img src="Convoy_Crisis.png" alt="A lineup of happy ghasts on a runway">
+            <figcaption>The LIA Convoy happy ghasts, landed at Luftoog between missions.</figcaption>
+        </figure>
+        <h3 id="east_by_west_marches">East by West Marches | <span class="tooltip-hover">1875<span class="tooltip-popup">Mar. 4, 2026</span></span> - <span class="tooltip-hover">1914<span class="tooltip-popup">Apr. 12, 2026 AVL</span></span> AVL</h3>
+        <p>
+            Marked by the founding of Armbruster, a settlement around the nearest end portal to the Pladsylvanian metropole, and to its east. Industrial efforts, both in the construction of new farms and the ramping up of operations of existing ones, were emphasized in this period so as to bolster the Pladsylvanian economy, which was in many ways still slowed from the earlier recession and abeyance. In the Western Reaches, the largest quarry seen in recorded history was laid down, serviced by the most advanced digging platform seen by that time; Sedna Station.
+        </p>
+        <figure>
+            <img src="East_by_West_Marches.png" alt="A happy ghast flying in front of an advanced digging platform">
+            <figcaption>Sedna Station, named for the happy ghast used in its commissioning, just before being populated by villagers.</figcaption>
+        </figure>
+        <p>
+            The period was also marked by an influx of squires which, unlike the past Squire Rebellion, resulted in surprisingly little conflict. These squires, nearly all settling to the west of pre-existing settlements, and the location of Armbruster to the east of the Pladsylvanian metropole, earned the period its name. 
+        </p>
+        <h3 id="the_antipathy">The Antipathy | <span class="tooltip-hover">1915<span class="tooltip-popup">Apr. 13, 2026</span></span> AVL - Present</h3>
+        <p>
+            TBD (Currently Ongoing)
+        </p>
+        <h2 id="politics">Politics</h2>
+        <hr>
+        <p>
+            Pladsylvania is a semi-constitutional monarchy, in which the Emperor wields significant though technically not <em>absolute</em> power. Despite possessing supreme executive and judicial authority, they still require the assent of the Imperial Diet for most legislative functions. 
+        </p>
+        <h3 id="imperial_diet"><img src="Imperial_Diet_Logo.png" alt="" class="inline"> Imperial Diet</h3>
+        <p>
+            The Imperial Diet is the supreme legislative authority in Pladsylvania, composed of seven Electors and chaired by the Emperor. They pass laws via motions, which are voted on by sitting Electors. Some motions, known as chair inquiries, are not legally binding, and can be used simply to gauge the body's opinion on a given question without compelling any action. 
+        </p>
+        <p>
+            The extent to which the Imperial Diet meaningfully restricts the Emperor's power, or if it even does at all, could be a subject of debate. The general support, or at worst mere apathy from a majority of sitting Electors the Emperor has enjoyed throughout the institution's history has made its real influence difficult to determine. Further complicating the matter is the <em>Special Provisions</em> section of the 3rd Constitution, which theoretically allows the Emperor to bypass the Imperial Diet entirely under arguably too vague of circumstances.
+        </p>
+        <h3 id="curia_regis"><img src="Curia_Regis_Logo.png" alt="" class="inline"> Curia Regis</h3>
+        <p>
+            The 5th Imperial Curia, more commonly known as the Curia Regis, is the largest general advisory body to the Emperor, tasked with assisting in day-to-day governance as needed. Unlike previous curiae, which were each generally convened for a specific purpose and later disbanded, the Curia Regis is a standing curia. This means it remains indefinitely, to be consulted on an ad hoc basis as the Emperor deems fit.
+        </p>
+        <p>
+            Members of the Curia Regis, known as <em>Courtiers</em>, are high-ranking officials in the Confederation and, with the exception of the Vicar General, appointed and subject to removal by the Emperor alone. 
+        </p>
+        <h3 id="regency_council"><img src="Regency_Council_Logo.png" alt="" class="inline"> Regency Council</h3>
+        <p>
+            The Regency Council is a semi-official advisory body to the Emperor, made up of the Regent and Viceregent. Unlike the other institutions described here, it was never formally established via either Decree or Imperial directive, and so it sits in a legal grey area. Questions of its legal status aside, the council remains relevant primarily as the Emperor's innermost circle.
+        </p>
+        <p>
+            As the first two individuals in the line of succession, both members of the council are typically the most well-informed on classified government matters, secret projects, etc. They are also the only ones besides the Emperor that are granted administrator's privilege.
+        </p>
+        <h3 id="suffragists_bloc"><img src="Suffragists_Bloc_Logo.png" alt="" class="inline"> Suffragist's Bloc</h3>
+        <p>
+            The Suffragist's Bloc is a special advisory body, tasked with assisting the Emperor on gender-sensitive matters. It was formed in response to an early incident of the Squire Rebellion, and has remained mostly on standby for crisis consultation and miscellaneous smaller duties.
+        </p>
+        <h3 id="sirb"><img src="Squire_Intake_And_Relations_Board_Logo.png" alt="" class="inline"> Squire Intake & Relations Board</h3>
+        <p>
+            The newest of the organizations listed here, the Squire Intake & Relations Board (SIRB) was founded at the start of the latter half of the East by West Marches, in order to improve coordination and logistics associated with taking in large numbers of new squires, including emergency consultation on problematic or rebellious ones, as well as decisions to grant knighthood.
+        </p>
+        <p>
+            As outlined in the Imperial directive for the creation of the Squire Intake & Relations Board, both members of the Regency Council, as well as the Leader and Deputy Leader of the Bloc are granted seats on the board. Additional members may be added and removed at the Emperor's discretion.
+        </p>
+</main>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-authors">
+            <img src="Jon_PFP.png" alt="Jon of Mittelwald" class="author-avatar">
+            <span>Written by Jon of Mittelwald</span>
+        </div>
+        <span class="footer-updated">Last updated: <span class="tooltip-hover">1931<span class="tooltip-popup">April 29, 2026</span></span>  AVL</span>
+    </div>
+    <div class="footer-bottom">
+        <span>&#169; 2026, Pladsylvania | <a href="mailto:you@example.com">pladsylvania@gmail.com</a></span>
+    </div>
+</footer>
+
+<div class="lb-backdrop" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-arrow lb-prev" id="lb-prev" aria-label="Previous">
+    <img src="glazed_arrow.png" alt="">
+  </button>
+  <div class="lb-content">
+    <div class="lb-topbar">
+      <span class="lb-filename" id="lb-filename"></span>
+      <div class="lb-topbar-actions">
+        <button class="lb-menu-btn" id="lb-menu-btn" aria-label="Options">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="4" cy="10" r="2" fill="currentColor"/>
+            <circle cx="10" cy="10" r="2" fill="currentColor"/>
+            <circle cx="16" cy="10" r="2" fill="currentColor"/>
+          </svg>
+        </button>
+        <div class="lb-menu-dropdown" id="lb-menu-dropdown">
+          <button id="lb-action-download">Download</button>
+          <button id="lb-action-copy">Copy image</button>
+        </div>
+        <button class="lb-close" id="lb-close" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="lb-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <div class="lb-bottombar">
+      <div class="lb-overlay-caption" id="lb-caption"></div>
+      <div class="lb-overlay-counter" id="lb-counter"></div>
+      <div class="lb-thumbstrip" id="lb-thumbstrip"></div>
+    </div>
+  </div>
+  <button class="lb-arrow lb-next" id="lb-next" aria-label="Next">
+    <img src="glazed_arrow.png" alt="">
+  </button>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
