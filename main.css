@@ -769,7 +769,8 @@ body.lb-active {
 
 #toc-clip {
     position: fixed;
-    left: max(0px, calc(50vw - calc(var(--max-content-width) / 2)));
+    left: 50%;
+    transform: translateX(calc(var(--max-content-width) / -2));
     top: 0;
     width: 500px;
     height: 100vh;
